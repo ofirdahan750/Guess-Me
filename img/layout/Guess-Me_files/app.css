@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shippori+Mincho+B1:wght@700&display=swap');
-
 body {
   display: flex;
   margin: 0;
@@ -31,13 +30,10 @@ main {
   background-color: #296898;
   font-family: 'Roboto', sans-serif;
 
-
 }
 
-
 header h1 {
-  font-size: 1.7em;
-  text-shadow: 2px 2px rgb(5, 1, 1);
+  font-size: 1.5em;
   margin-top: 20px;
 }
 
@@ -104,13 +100,12 @@ button {
   display: none;
   font-size: 1.25rem;
   font-weight: bolder;
+
   position: absolute;
-  background-color: rgba(248, 232, 232, 0.932);
+  background-color: rgba(250, 199, 199, 0.897);
   min-height: .625rem;
   min-width: 3.125rem;
-  bottom: 50%;
-  right: 40%;
- 
+
 }
 
 .pop-up h1 {
@@ -128,14 +123,13 @@ button {
   padding: .625rem;
   text-transform: uppercase;
   border: .0625rem black solid;
-  border-radius: 10%;
+  border-radius:  10%;
   display: inline-block;
 }
 
-.new-quest-lose {
+.new-quest {
   display: none;
 }
-
-.new-quest-lose h2 {
+.new-quest h2{
   font-weight: bolder;
 }

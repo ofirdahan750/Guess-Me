@@ -38,7 +38,7 @@ function onUserResponse(ev) {
             alert('Yes, I knew it!');
             // TODO: improve UX
         } else {
-            $('.new-quest-lose').show(this, 1500);
+            $('.new-quest').show(this, 1500);
         }
     } else {
         gLastRes = res
