@@ -70,9 +70,8 @@ button {
 .btn {
   width: 6.25rem;
   height: 2.5rem;
-  /* outline: none; */
   border: 1px solid black;
-  border-radius: 35%;
+  border-radius: 20px;
   font-size: 0.9em;
   cursor: pointer;
   font-weight: bolder;
