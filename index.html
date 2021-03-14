@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Guess-Me</title>
+    <link rel="stylesheet" href="css/app.css" />
+    
+</head>
+
+<body>
+    <header>
+        <img src="img/layout/logo.png" />
+        <!-- <img src="img/layout/genie-2590056_960_720-removebg-preview.png" > -->
+        <h1>Guess Who</h1>
+    </header>
+
+    <main>
+        <section class="game-start">
+            
+            <h2>Think of Someone...</h2>
+            <button class="btn btn-start">I'm Ready!</button>
+        </section>
+
+        <section class="quest" style="display: none">
+            <h2></h2>
+            <button class="btn btn-yes">Yes</button>
+            <button class="btn btn-no">No</button>
+        </section>
+
+        <section class="new-quest">
+            <h2>OK, I gave up...</h2>
+            <div class="pop-up" ><h1>Error!</h1> <p>Please fill all the required fields...</p><button onclick="$('.pop-up').fadeOut(300)">X</button></div>
+            <form class="ending-form" autocomplete="off" >
+                <label for="newGuess">You thought of: </label>
+                <input name="newGuess" type="txt" id="newGuess" placeholder="Your Guess"/>
+
+                <label for="newQuest">Question to differentiate:</label>
+                <input name="newQuest" type="txt" id="newQuest" placeholder="The answer is YES for yours" />
+
+                <button type="submit" class="btn btn-add-guess">Make me Smarter!</button>
+            </form>
+        </section>
+        <!-- <section class="successful-guess-msg">You won!</section> -->
+    </main>
+
+    <footer> COPYRIGHT-ALL RIGHTS RESERVED  &copy; 2020</footer>
+
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="js/storge-service.js"></script>
+    <script src="js/quest-service.js"></script>
+    <script src="js/quest-controller.js"></script>
+</body>
+
+</html>

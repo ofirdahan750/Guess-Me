@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shippori+Mincho+B1:wght@700&display=swap');
+body {
+  display: flex;
+  margin: 0;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header {
+  background-color: #73aedb;
+  text-align: center;
+  color: #fcf064;
+  font-size: 3em;
+  height: 25rem;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  color: lightblue;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #296898;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+header h1 {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.ending-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ending-form input {
+  margin: 10px;
+  font-size: 1em;
+}
+
+.ending-form label {
+  font-weight: bold;
+}
+
+.ending-form input,
+label {
+  height: 2.5rem;
+  width: 18.75rem;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+  width: 6.25rem;
+  height: 2.5rem;
+  /* outline: none; */
+  border: 1px solid black;
+  border-radius: 35%;
+  font-size: 0.9em;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.btn-start {
+  background-color: #b8af36;
+
+
+}
+
+.btn-yes {
+  background-color: #28a745;
+}
+
+.btn-no {
+  background-color: #ff0018;
+}
+
+.btn-add-guess {
+  background-color: #fd7e14;
+  width: 15.625rem;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  border-radius: 5%;
+}
+
+.pop-up {
+  display: none;
+  font-size: 1.25rem;
+  font-weight: bolder;
+
+  position: absolute;
+  background-color: rgba(250, 199, 199, 0.897);
+  min-height: .625rem;
+  min-width: 3.125rem;
+
+}
+
+.pop-up h1 {
+  text-decoration: underline;
+}
+
+.pop-up button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background: #404040;
+  color: #ffffff !important;
+  font-weight: 100;
+  padding: .625rem;
+  text-transform: uppercase;
+  border: .0625rem black solid;
+  border-radius:  10%;
+  display: inline-block;
+}
+
+.new-quest {
+  display: none;
+}
+.new-quest h2{
+  font-weight: bolder;
+}
