@@ -8,23 +8,19 @@ $('.btn-start').click(onStartGuessing);
 $('.btn-yes').click({ ans: 'yes' }, onUserResponse);
 $('.btn-no').click({ ans: 'no' }, onUserResponse);
 $('.btn-add-guess').click(onAddGuess);
+$('.btn-reset-winner-game').click(startNewGame);
 
 function init() {
-    console.log('Started...');
     createQuestsTree();
 }
 
 function onStartGuessing() {
-    // TODO: hide the game-start section
     $('.game-start').hide();
     renderQuest();
     $('.quest').show();
-    // TODO: show the quest section
 }
 
 function renderQuest() {
-    // TODO: select the <h2> inside quest and update
-    // its text by the currQuest text
     var currQuest = getCurrQuest()
     $('.quest h2').html(currQuest.txt)
 
@@ -35,8 +31,7 @@ function onUserResponse(ev) {
     if (isChildless(getCurrQuest())) {
         $('.quest').hide(this, 1500);
         if (res === 'yes') {
-            alert('Yes, I knew it!');
-            // TODO: improve UX
+            $('.new-quest-win').show(this, 1500);
         } else {
             $('.new-quest-lose').show(this, 1500);
         }
@@ -45,6 +40,11 @@ function onUserResponse(ev) {
         moveToNextQuest(gLastRes);
         renderQuest();
     }
+}
+
+function startNewGame() {
+    onRestartGame()
+    renderQuest()
 }
 
 function onAddGuess(ev) {
@@ -66,7 +66,8 @@ function onRestartGame() {
     renderQuest();
     $('#newGuess').val('')
     $('#newQuest').val('')
-    $('.new-quest').hide();
+    $('.new-quest-lose').hide();
+    $('.new-quest-win').hide();
     $('.game-start').show();
 }
 

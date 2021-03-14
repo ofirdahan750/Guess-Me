@@ -78,10 +78,8 @@ button {
   font-weight: bolder;
 }
 
-.btn-start {
+.btn-start, .btn-reset-winner-game {
   background-color: #b8af36;
-
-
 }
 
 .btn-yes {
@@ -138,4 +136,8 @@ button {
 
 .new-quest-lose h2 {
   font-weight: bolder;
+}
+
+.new-quest-win {
+  display: none;
 }
