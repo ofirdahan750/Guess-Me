@@ -29,9 +29,11 @@
         </section>
 
         <section class="new-quest-lose">
-            <h2>OK, I gave up...</h2>
+            <fieldset>
+            <legend><h2>OK, I gave up...</h2></legend>
             <div class="pop-up" ><h1>Error!</h1> <p>Please fill all the required fields...</p><button onclick="$('.pop-up').fadeOut(300)">X</button></div>
             <form class="ending-form" autocomplete="off" >
+            
                 <label for="newGuess">You thought of: </label>
                 <input name="newGuess" type="txt" id="newGuess" placeholder="Your Guess"/>
 
@@ -40,11 +42,12 @@
 
                 <button type="submit" class="btn btn-add-guess">Make me Smarter!</button>
             </form>
+        </fieldset>
         </section>
         <section class="new-quest-win">
             <h2>I knew it!</h2>
             <p>try again?</p>
-            <button class="btn btn-reset-winner-game">I'm Ready!</button>
+            <button class="btn btn-reset-winner-game">Play agian!</button>
         </section>
     </main>
 

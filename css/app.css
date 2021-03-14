@@ -105,8 +105,8 @@ button {
   background-color: rgba(248, 232, 232, 0.932);
   min-height: .625rem;
   min-width: 3.125rem;
-  bottom: 50%;
-  right: 40%;
+  bottom: 42%;
+  left: 43%;
  
 }
 
@@ -128,13 +128,20 @@ button {
   border-radius: 10%;
   display: inline-block;
 }
+ .new-quest-lose {
+   display: none; 
+} 
 
-.new-quest-lose {
-  display: none;
+fieldset {
+  width: 500px;
+
+  /* padding: 5px 5px; */
+ 
 }
 
-.new-quest-lose h2 {
+fieldset legend {
   font-weight: bolder;
+  
 }
 
 .new-quest-win {
