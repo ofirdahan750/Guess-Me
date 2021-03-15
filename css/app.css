@@ -1,5 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shippori+Mincho+B1:wght@700&display=swap');
 
+@keyframes floating {
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 15px); }
+  to   { transform: translate(0, -0px); }    
+}
+
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+
+
 body {
   display: flex;
   margin: 0;
@@ -146,4 +177,17 @@ fieldset legend {
 
 .new-quest-win {
   display: none;
+}
+
+.floating {  
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+.heartbeat {
+	animation: heartbeat 1.5s ease-in-out infinite both;
 }
